@@ -425,6 +425,13 @@ p {
   display: none;
 }
 
+.portfolio-item.active .portfolio__about {
+  color: #006278;
+  -webkit-transform: translate(60%, -50%);
+      -ms-transform: translate(60%, -50%);
+          transform: translate(60%, -50%);
+}
+
 .portfolio-item:hover .portfolio__about {
   color: #006278;
   -webkit-transform: translate(60%, -50%);
@@ -666,6 +673,11 @@ p {
   }
   .portfolio-item {
     width: 100%;
+  }
+  .portfolio-item.active .portfolio__about {
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   .portfolio-item:hover .portfolio__about {
     -webkit-transform: translate(0, 0);
