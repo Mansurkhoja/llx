@@ -288,6 +288,7 @@ p {
   z-index: 3;
   bottom: 0;
   margin-bottom: 50px;
+  color: #fff;
 }
 
 .intro__btn:after {
@@ -345,6 +346,15 @@ p {
 .about {
   color: #000;
   padding: 100px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: calc(var(--vh, 1vh) * 100);
 }
 
 .about__sub-title {
@@ -352,6 +362,7 @@ p {
   text-align: center;
   margin: 10px auto 70px;
   max-width: 900px;
+  font-weight: 700;
 }
 
 .about__text {
@@ -359,16 +370,27 @@ p {
   margin-bottom: 5px;
 }
 
+.about__title {
+  font-size: 107px;
+}
+
 /* PORTFOLIO */
 .portfolio--section {
-  padding: 40px 0;
-  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #ff2d18), color-stop(20%, #006278));
-  background: -o-linear-gradient(left, #ff2d18 20% 20%, #006278 20%);
-  background: linear-gradient(to right, #ff2d18 20% 20%, #006278 20%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(21%, #ff2d18), color-stop(21%, #006278));
+  background: -o-linear-gradient(left, #ff2d18 21% 21%, #006278 21%);
+  background: linear-gradient(to right, #ff2d18 21% 21%, #006278 21%);
 }
 
 .portfolio--section .portfolio__title {
   margin-bottom: 60px;
+}
+
+.portfolio--section .container--fluid {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(21%, #ff2d18), color-stop(21%, #006278));
+  background: -o-linear-gradient(left, #ff2d18 21% 21%, #006278 21%);
+  background: linear-gradient(to right, #ff2d18 21% 21%, #006278 21%);
 }
 
 .portfolio-video-wrapper {
@@ -476,7 +498,7 @@ p {
   color: #ff2d18;
   z-index: 3;
   background-color: #ffffff;
-  padding: 30px 50px;
+  padding: 30px 45px;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -576,7 +598,7 @@ p {
   .navbar__link {
     font-size: 24px;
   }
-  .intro__title {
+  .intro__title, .about__title {
     font-size: 87px;
   }
   .about__sub-title {
@@ -649,7 +671,7 @@ p {
   .navbar__link {
     font-size: 20px;
   }
-  .intro__title {
+  .intro__title, .about__title {
     font-size: 47px;
   }
   .intro__btn {
@@ -727,7 +749,25 @@ p {
   .contacts__items {
     padding-right: 110px;
   }
+  .contacts__address a, .contacts__address span {
+    font-size: 20px;
+  }
   .footer {
     padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .about__title, .intro__title {
+    font-size: 34px;
+  }
+  .title {
+    font-size: 27px;
+  }
+  .contacts__title {
+    font-size: 23px;
+  }
+  .contacts__address a, .contacts__address span {
+    font-size: 18px;
   }
 }

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LL production+</title>
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -33,40 +32,16 @@
                 <h1 class="intro__title">
                     l<span>l</span> production+
                 </h1>
-                <div class="intro__btn">
-                    о нас
-                </div>
-                <div class="intro__slider swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" data-swiper-autoplay="4000">
-                            <div class="intro__video">
-                                <video autoplay muted playsinline>
-                                    <source src="video/intro-video.mp4" type="video/mp4">
-                                    <source src="video/intro-video.webm" type="video/webm">
-                                </video>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" data-swiper-autoplay="5000">
-                            <div class="intro__video">
-                                <video autoplay muted playsinline>
-                                    <source src="video/intro-video.mp4" type="video/mp4">
-                                    <source src="video/intro-video.webm" type="video/webm">
-                                </video>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" data-swiper-autoplay="5000">
-                            <div class="intro__video">
-                                <video autoplay muted playsinline>
-                                    <source src="video/intro-video.mp4" type="video/mp4">
-                                    <source src="video/intro-video.webm" type="video/webm">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
+                <a data-scroll href="#aboutsection" class="intro__btn">о нас</a>
+                <div class="intro__video">
+                    <video autoplay muted playsinline loop>
+                        <source src="video/intro-video.mp4" type="video/mp4">
+                        <source src="video/intro-video.webm" type="video/webm">
+                    </video>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="aboutsection">
             <div class="container">
                 <div class="about__inner">
                     <h2 class="about__title title">ll production+</h2>
@@ -161,7 +136,7 @@
             </div>
         </footer>
     </div>
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="js/main.js"></script>
 </body>

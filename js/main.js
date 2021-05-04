@@ -6,29 +6,24 @@ window.addEventListener('resize', function () {
   var vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', ''.concat(vh, 'px'));
 }); //swiper video init
-
-var introVideo = new Swiper('.intro__slider', {
-  slidesPerView: 1,
-  speed: 599,
-  observeParents: true,
-  observeSlideChildren: true,
-  observer: true,
-  resizeObserver: true,
-  watchActiveIndex: true,
-  watchSlidesVisibility: true,
-  touchAngle: 30,
-  touchRatio: 1,
-  preventInteractionOnTransition: true,
-  autoplay: true
-});
-introVideo.on('slideChange', function () {
-  if (introVideo.isEnd) {
-    introVideo.autoplay.stop();
-  }
-}); // var introActiveSlide = introVideo.el.querySelector('.swiper-slide-active'),
-// 	introActiveVideo = introActiveSlide.querySelectorAll('video');
-// introActiveVideo.addEventListener('ended', (e) => {
-// 	introVideo.slideNext();
+// var introVideo = new Swiper('.intro__slider', {
+// 	slidesPerView: 1,
+// 	speed: 599,
+// 	observeParents: true,
+// 	observeSlideChildren: true,
+// 	observer: true,
+// 	resizeObserver: true,
+// 	watchActiveIndex: true,
+// 	watchSlidesVisibility: true,
+// 	touchAngle: 30,
+// 	touchRatio: 1,
+// 	preventInteractionOnTransition: true,
+// 	autoplay: true
+// });
+// introVideo.on('slideChange', function () {
+// 	if (introVideo.isEnd) {
+// 		introVideo.autoplay.stop();
+// 	}
 // });
 //menu
 
@@ -51,4 +46,9 @@ portfolioPlay.forEach(function (el) {
     var currVideoPortfolio = new Vimeo.Player(el.parentElement.querySelector('iframe'));
     currVideoPortfolio.play();
   });
+}); //smooth-scroll
+
+var scrollSmooth = new SmoothScroll('a[href*="#"]', {
+  speed: 99,
+  speedAsDuration: true
 });
