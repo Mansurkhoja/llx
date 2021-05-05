@@ -526,8 +526,13 @@ p {
           transform: translateX(100%);
 }
 
+.portfolio__about-inner {
+  height: 100%;
+  overflow: auto;
+}
+
 .portfolio__about-title {
-  font-size: 38px;
+  font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
@@ -536,6 +541,40 @@ p {
 
 .portfolio__sub-title {
   font-size: 20px;
+}
+
+.portfolio__head {
+  padding: 200px 0 115px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio--page {
+  background: -webkit-gradient(linear, left top, right top, color-stop(21%, #ff2d18), color-stop(21%, #ffffff));
+  background: -o-linear-gradient(left, #ff2d18 21% 21%, #ffffff 21%);
+  background: linear-gradient(to right, #ff2d18 21% 21%, #ffffff 21%);
+}
+
+.portfolio--page .container--fluid {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(21%, #ff2d18), color-stop(21%, #ffffff));
+  background: -o-linear-gradient(left, #ff2d18 21% 21%, #ffffff 21%);
+  background: linear-gradient(to right, #ff2d18 21% 21%, #ffffff 21%);
+}
+
+.portfolio--page .portfolio-item:hover .portfolio__about {
+  color: #ffffff;
+}
+
+.portfolio--page .portfolio__about {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.portfolio--page .portfolio__about:after {
+  background-color: #000;
 }
 
 /* CONTACTS */
@@ -588,6 +627,14 @@ p {
 /* FOTER */
 .footer {
   padding: 40px 0;
+}
+
+.footer--blue {
+  background-color: #006278;
+}
+
+.footer--blue .contacts__title, .footer--blue .contacts__address a, .footer--blue .contacts__address span {
+  color: #fff;
 }
 
 /* RESPONSIVE */
