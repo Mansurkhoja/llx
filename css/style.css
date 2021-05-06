@@ -236,12 +236,18 @@ p {
           align-items: center;
 }
 
-.navbar__item + .navbar__item {
-  margin-left: 10px;
+.navbar__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 20%;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  max-width: 20%;
+  text-align: center;
 }
 
 .navbar__link {
-  font-size: 32px;
+  margin: 0 4px;
+  font-size: 28px;
   color: #fff;
   -webkit-transition: color .2s linear;
   -o-transition: color .2s linear;
@@ -269,6 +275,7 @@ p {
 }
 
 .intro__title {
+  padding: 0 15px;
   font-size: 107px;
   top: 50%;
   left: 0;
@@ -540,6 +547,7 @@ p {
 }
 
 .portfolio__sub-title {
+  color: #006278;
   font-size: 20px;
 }
 
@@ -710,6 +718,13 @@ p {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .navbar__item {
+    max-width: initial;
+    -webkit-box-flex: initial;
+    -webkit-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
   }
   .navbar__item,
   .navbar__item + .navbar__item {
