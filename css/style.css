@@ -820,11 +820,11 @@ p {
 }
 
 @media screen and (max-width: 380px) {
-  .about__title, .intro__title {
-    font-size: 34px;
-  }
   .title {
     font-size: 27px;
+  }
+  .about__title, .intro__title {
+    font-size: 34px;
   }
   .contacts__title {
     font-size: 23px;
