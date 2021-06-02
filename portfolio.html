@@ -11,13 +11,13 @@
 
 <body>
     <div class="page">
-        <header class="header">
+        <header class="header header--dark">
             <div class="container container--fluid">
                 <nav class="navbar">
                     <ul class="navbar__list">
                         <li class="navbar__item"><a href="index.html" class="navbar__link">О нас</a></li>
                         <li class="navbar__item"><a href="#" class="navbar__link">Аренда</a></li>
-                        <li class="navbar__item"><a href="portfolio.html" class="navbar__link">Портфолио</a></li>
+                        <li class="navbar__item"><a href="portfolio.html" class="navbar__link active">Портфолио</a></li>
                         <li class="navbar__item"><a href="#" class="navbar__link">Трансляции</a></li>
                         <li class="navbar__item"><a href="#" class="navbar__link">Контакты</a></li>
                     </ul>
@@ -28,21 +28,88 @@
             </div>
         </header>
         <section class="portfolio portfolio--page">
-            <div class="portfolio__head" style="background-image: url(./img/portfolio-bg.jpg);">
-                <h1 class="title">
-                    Портфолио
-                </h1>
+            <div class="container container--fluid">
+                <div class="portfolio__head">
+                    <h1 class="title">
+                        Портфолио
+                    </h1>
+                    <div class="triangle-btn triangle-btn--mob"></div>
+                </div>
+                <div class="portfolio__items">
+                    <div class="portfolio__item">
+                        <div class="portfolio__info" style="background-image: url(./img/portfolio-img.jpg);">
+                            <div class="portfolio__name">
+                                Локимин - Прорубь/
+                                Loqiemean - prorub
+                            </div>
+                            <div class="portfolio__descr">
+                                Описание, информация и всякое прочее
+                            </div>
+                        </div>
+                        <div class="portfolio__play"></div>
+                        <div class="portfolio__iframe">
+                            <iframe class="video-frame"
+                                src="https://player.vimeo.com/video/395016201?autoplay=0&amp;controls=1&amp;autopause=0"
+                                allowfullscreen="" title="vimeo395016201" allow="autoplay; fullscreen"></iframe>
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="portfolio__info" style="background-image: url(./img/portfolio-img.jpg);">
+                            <div class="portfolio__name">
+                                Локимин - Прорубь/
+                                Loqiemean - prorub
+                            </div>
+                            <div class="portfolio__descr">
+                                Описание, информация и всякое прочее
+                            </div>
+                        </div>
+                        <div class="portfolio__play"></div>
+                        <div class="portfolio__iframe">
+                            <iframe class="video-frame"
+                                src="https://player.vimeo.com/video/395016201?autoplay=0&amp;controls=1&amp;autopause=0"
+                                allowfullscreen="" title="vimeo395016201" allow="autoplay; fullscreen"></iframe>
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="portfolio__info" style="background-image: url(./img/portfolio-bg.jpg);">
+                            <div class="portfolio__name">
+                                Локимин - Прорубь/
+                                Loqiemean - prorub
+                            </div>
+                            <div class="portfolio__descr">
+                                Описание, информация и всякое прочее
+                            </div>
+                        </div>
+                        <div class="portfolio__play"></div>
+                        <div class="portfolio__iframe">
+                            <iframe class="video-frame"
+                                src="https://player.vimeo.com/video/395016201?autoplay=0&amp;controls=1&amp;autopause=0"
+                                allowfullscreen="" title="vimeo395016201" allow="autoplay; fullscreen"></iframe>
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="portfolio__info" style="background-image: url(./img/portfolio-img.jpg);">
+                            <div class="portfolio__name">
+                                Локимин - Прорубь/
+                                Loqiemean - prorub
+                            </div>
+                            <div class="portfolio__descr">
+                                Описание, информация и всякое прочее
+                            </div>
+                        </div>
+                        <div class="portfolio__play"></div>
+                        <div class="portfolio__iframe">
+                            <iframe class="video-frame"
+                                src="https://player.vimeo.com/video/395016201?autoplay=0&amp;controls=1&amp;autopause=0"
+                                allowfullscreen="" title="vimeo395016201" allow="autoplay; fullscreen"></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- <iframe class="video-frame"
-            src="https://player.vimeo.com/video/395016201?autoplay=0&amp;controls=1&amp;autopause=0"
-            allowfullscreen="" title="vimeo395016201" allow="autoplay; fullscreen"></iframe>
-            <iframe
-            src="https://player.vimeo.com/video/395016201?autoplay=0&amp;controls=1&amp;autopause=0"
-            allowfullscreen="" title="vimeo395016201" allow="autoplay; fullscreen"></iframe>
-    -->
-
+            <div class="portfolio__bg" style="background-image: url(./img/portfolio-page-bg.jpg);">
+            </div>
         </section>
-        <footer class="footer footer--blue">
+        <footer class="footer">
             <div class="container">
                 <div class="footer__contacts">
                     <div class="contacts">
@@ -51,13 +118,17 @@
                         </div>
                         <div class="contacts__items">
                             <div class="contacts__address">
-                                <a href="mailto:email@bk.ru">E-mail</a>
+                                <span class="contacts__address-name">E-mail</span>
+                                <a href="mailto:email@bk.ru"
+                                    class="contacts__address-action">VIDEOLLPRODUCTION@gmail.com</a>
                             </div>
                             <div class="contacts__address">
-                                <a href="tel:+77777">Телефон</a>
+                                <span class="contacts__address-name">Телефон</span>
+                                <a href="tel:+79685354828" class="contacts__address-action">+79685354828</a>
                             </div>
                             <div class="contacts__address">
-                                <span>Адрес</span>
+                                <span class="contacts__address-name">Адрес</span>
+                                <span class="contacts__address-action">Москва, Проспект Вернадского, 78</span>
                             </div>
                             <div class="contacts__logo">
                                 <img src="img/footer-logo.png" alt="logo">
